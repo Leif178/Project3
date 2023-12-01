@@ -1,0 +1,2 @@
+[console_scripts]
+JNP3 = project3_package.mcmc:runner

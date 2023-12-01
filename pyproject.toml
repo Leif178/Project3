@@ -1,1 +1,25 @@
-[project]name = "project3_package"version = "0.0.1"authors = [  { name="John Batarekh", email="jvbatae@syr.edu" },  { name="Nadita Sudha Tiwari", email=""}]description = "Package containing Project 3"readme = "README.md"requires-python = ">=3.8"classifiers = [    "Programming Language :: Python :: 3",    "License :: OSI Approved :: MIT License",    "Operating System :: OS Independent",][project.urls]Homepage = "https://github.com/Leif178/Project3"
+[project]
+name = "project3_package"
+version = "0.0.2"
+authors = [
+  { name="John Batarekh", email="jvbatare@syr.edu" },
+  { name="Nadita Sudha Tiwari", email="natiwari@syr.edu"}
+]
+description = "Package containing Project 3"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"numpy",
+	"matplotlib",
+	]
+
+[project.scripts]
+JNP3 = "project3_package.mcmc:runner"
+
+[project.urls]
+Homepage = "https://github.com/Leif178/Project3"

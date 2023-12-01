@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/project3_package/__init__.py
+src/project3_package/mcmc.py
+src/project3_package.egg-info/PKG-INFO
+src/project3_package.egg-info/SOURCES.txt
+src/project3_package.egg-info/dependency_links.txt
+src/project3_package.egg-info/entry_points.txt
+src/project3_package.egg-info/requires.txt
+src/project3_package.egg-info/top_level.txt
