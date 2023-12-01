@@ -100,8 +100,8 @@ plt.ylim(-1, 1)
 Gelman Rubin Statistic
 """
 
-icsx = np.arange(-1, 1, 0.5)
-icsy = np.arange(-1, 1, 0.5)
+icsx = np.arange(-1, 1, 0.2)
+icsy = np.arange(-1, 1, 0.2)
 
 
 chainmeanx = []
@@ -140,9 +140,9 @@ Bx = L / (len(chainmeanx) - 1) * np.sum((np.array(chainmeanx) - grandmeanx) ** 2
 By = L / (len(chainmeany) - 1) * np.sum((np.array(chainmeany) - grandmeany) ** 2)
 Br = L / (len(chainmeanr) - 1) * np.sum((np.array(chainmeanr) - grandmeanr) ** 2)
 
-Wx = 1 / len(chainmeanx) * np.sum((np.array(chainvarx)) ** 2)
-Wy = 1 / len(chainmeany) * np.sum((np.array(chainvary)) ** 2)
-Wr = 1 / len(chainmeanr) * np.sum((np.array(chainvarr)) ** 2)
+Wx = 1 / len(chainmeanx) * np.sum((np.array(chainvarx)))
+Wy = 1 / len(chainmeany) * np.sum((np.array(chainvary)))
+Wr = 1 / len(chainmeanr) * np.sum((np.array(chainvarr)))
 
 
 Rx = ((L - 1) / L * Wx - 1 / L * Bx) / Wx
